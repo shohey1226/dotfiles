@@ -2,6 +2,11 @@
 
 sudo apt-get -y update
 
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install --lts
+npm install yarn -g
+
 # Neovim
 sudo apt-get -y install neovim 
 
@@ -11,10 +16,6 @@ sh ./installer.sh ~/.cache/dein
 
 # fzf
 sudo apt-get -y install fzf
-
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-nvm install --lts
 
 # rbenv
 sudo apt-get -y install rbenv
